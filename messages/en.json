@@ -1,5 +1,25 @@
 {
   "IndexPage": {
-    "title": "Hello world! 🗽"
+    "title": "Hello World! 🗽",
+    "description": "Welcome to the Next.js Internationalization (i18n) app example."
+  },
+  "AboutPage": {
+    "title": "About Title",
+    "description": "This is About Page description"
+  },
+  "NotFoundPage": {
+    "title": "Page Not Found",
+    "description": "Ooops! It seems that this page does not exist"
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "Footer": {
+    "license": "Developed by Emanuel Escudero",
+    "logo": "Logo",
+    "url": "https://emanuelescudero.ar"
   }
 }

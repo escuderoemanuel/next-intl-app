@@ -1,9 +1,12 @@
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
 import {unstable_setRequestLocale} from 'next-intl/server';
-// Can be imported from a shared config
 const locales = ['en', 'de'];
- 
+import "./globals.css";
+import Header from '@/components/header';
+import Footer from '@/components/footer';
+
+
 export function generateStaticParams() {
   return locales.map((locale) => ({locale}));
 }
@@ -22,9 +25,13 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body>
+      <body >
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <div className='flex flex-col h-screen max-w-4xl mx-auto'>
+            <Header/>
+            {children}
+            <Footer/>
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>
