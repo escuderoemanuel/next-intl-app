@@ -1,36 +1,34 @@
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
-import {unstable_setRequestLocale} from 'next-intl/server';
-const locales = ['en', 'de'];
-import "./globals.css";
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
+import { unstable_setRequestLocale } from 'next-intl/server';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import './globals.css';
 
+const locales = ['en', 'es'];
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({locale}));
+  return locales.map((locale) => ({ locale }));
 }
 
 export default async function LocaleLayout({
   children,
-  params: {locale}
+  params: { locale },
 }: {
   children: React.ReactNode;
-  params: {locale: string};
+  params: { locale: string };
 }) {
   unstable_setRequestLocale(locale);
-  // Providing all messages to the client
-  // side is the easiest way to get started
   const messages = await getMessages();
 
   return (
     <html lang={locale}>
-      <body >
+      <body>
         <NextIntlClientProvider messages={messages}>
           <div className='flex flex-col h-screen max-w-4xl mx-auto'>
-            <Header/>
+            <Header locale={locale} />
             {children}
-            <Footer/>
+            <Footer />
           </div>
         </NextIntlClientProvider>
       </body>
