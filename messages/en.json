@@ -7,6 +7,18 @@
     "title": "About Title",
     "description": "This is About Page description"
   },
+  "BlogPage": {
+    "title": "Blog Title",
+    "description": "This is Blog Page description"
+  },
+  "ContactPage": {
+    "title": "Contact Title",
+    "description": "This is Contact Page description"
+  },
+  "PrivacyPage": {
+    "title": "Privacy Policy",
+    "description": "Here is the description of the Privacy page"
+  },
   "NotFoundPage": {
     "title": "Page Not Found",
     "description": "Ooops! It seems that this page does not exist"

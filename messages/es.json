@@ -7,6 +7,18 @@
     "title": "Nosotros Título",
     "description": "Esta es la descripción de la página Nosotros"
   },
+  "BlogPage": {
+    "title": "Blog Título",
+    "description": "Esta es la descripción de la página Blog"
+  },
+  "ContactPage": {
+    "title": "Contacto Título",
+    "description": "Esta es la descripción de la página Contacto"
+  },
+  "PrivacyPage": {
+    "title": "Política de Privacidad",
+    "description": "Aqui va la descripción de la página de Privacidad"
+  },
   "NotFoundPage": {
     "title": "Página No encontrada",
     "description": "Ooops! Parece que la página que buscas no existe."
