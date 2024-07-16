@@ -1,0 +1,35 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "about": "About Me",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "Footer": {
+    "license": "Developed by Emanuel Escudero",
+    "logo": "/Logo2024.png",
+    "logoAlt": "Developer Logotype",
+    "url": "https://emanuelescudero.ar"
+  },
+  "IndexPage": {
+    "title": "🗽 Hello World!",
+    "description": "Welcome to the Next.js Internationalization (i18n) app example.",
+    "text1": "Internationalization (i18n) is an essential practice in modern web development that allows applications to support multiple languages ​​and regions. In the context of Next.js, next-intl facilitates this process by providing tools and functions to handle translations and locale formats. This package allows you to define and load language-specific messages into JSON files, which can be organized into folders by language. During the rendering process, next-intl automatically selects the appropriate messages based on the user's preferred language or the one specified in the URL, ensuring that the content is displayed correctly in the corresponding language.",
+    "text2": "In addition, next-intl offers easy-to-use components and hooks, such as NextIntlProvider and useTranslations, that simplify the integration of translations into React components. With these, developers can efficiently access translated messages and use them in their user interfaces. The ability to handle multiple languages ​​and configure locale-specific routes makes next-intl a powerful tool for building global applications that offer a localized and personalized user experience. This not only improves accessibility and inclusivity, but also opens up new opportunities to reach wider audiences in different regions of the world."
+  },
+  "AboutPage": {
+    "title": "Emanuel Escudero 🤓",
+    "description": "I'm a FullStack Developer & Advanced Technician in Tourism 🤷‍♂️",
+    "text1": "Today I decided to create this app, to practice the implementation of internationalization tools, for NextJs. You can see the source code in my GitHub repository  👉 ",
+    "text2": "You can see my website by following the link at the bottom of the page 👇",
+    "text3": "Thank you for your visit!",
+    "repoLink": "https://github.com/escuderoemanuel/next-intl-app"
+  },
+  "ContactPage": {
+    "title": "My data",
+    "description": "Do you want contact me?",
+    "linkedIn": "https://www.linkedin.com/in/emanuelescudero",
+    "gitHub": "https://github.com/escuderoemanuel",
+    "website": "https://emanuelescudero.ar"
+  }
+}
