@@ -32,3 +32,47 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+## Folders Structure
+
+next-intl-app
+- messages
+  - en
+    - AboutPage.json
+    - ContactPage.json
+    - Footer.json
+    - IndexPage.json
+    - Navigation.json
+  - es
+    - AboutPage.json
+    - ContactPage.json
+    - Footer.json
+    - IndexPage.json
+    - Navigation.json
+  - public
+    - Logo2024.png
+  - src
+    - app
+      - [locale]
+        - about
+          - page.tsx 
+        - contact
+          - page.tsx
+        - globals.css
+        - layout.tsx
+        - page.tsx
+      - favicon.ico
+      - layout.tsx
+      - not-found.tsx
+      - page.tsx
+    - components
+      - footer.jsx
+      - header.jsx
+      - local-switcher.tsx
+    - ui
+      - font.tsx
+    - i18n.ts
+    - middleware.ts
+  - next.config.mjs
+  - tsconfig.json
+  - tailwind.config.ts
