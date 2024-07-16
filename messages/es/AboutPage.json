@@ -1,4 +1,8 @@
 {
-  "title": "Nosotros titulo",
-  "description": "Esta es la descripción de la página Nosotros"
+  "title": "Emanuel Escudero 🤓",
+  "description": "Soy Desarrollador FullStack y Técnico Superior en Turismo 🤷‍♂️",
+  "text1": "Hoy decidí crear esta app, para practicar la implementación de la herramientas de 'internacionalización' para NextJs. Puedes ver el código fuente en mi repositorio de GitHub 👉 ",
+  "text2": "Puedes ver mi sitio web, siguiendo el enlace al final de la página 👇",
+  "text3": "¡Gracias por tu visita!",
+  "repoLink": "https://github.com/escuderoemanuel/next-intl-app"
 }

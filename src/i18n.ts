@@ -3,16 +3,19 @@ import { getRequestConfig } from 'next-intl/server';
 
 const locales = ['en', 'es'];
 
-export default getRequestConfig(async ({ locale }) => {
-  if (!locales.includes(locale as any)) notFound();
+type Messages = Record<string, Record<string, string>>;
 
-  const messages: Record<string, any> = {};
+export default getRequestConfig(async ({ locale }) => {
+  if (!locales.includes(locale as string)) notFound();
+
+  const messages: Messages = {};
 
   const loadMessages = async (page: string) => {
     try {
-      const pageMessages = (await import(`../messages/${locale}/${page}.json`)).default;
+      const pageMessages = (await import(`../messages/${locale}/${page}.json`)).default as Record<string, string>;
       messages[page] = pageMessages;
     } catch (error) {
+      console.error(`Error loading messages for ${locale}/${page}:`, error);
       console.warn(`No messages found for page ${page} in locale ${locale}`);
     }
   };
@@ -22,7 +25,6 @@ export default getRequestConfig(async ({ locale }) => {
     loadMessages('IndexPage'),
     loadMessages('AboutPage'),
     loadMessages('ContactPage'),
-    loadMessages('BlogPage'),
     loadMessages('Footer'),
   ]);
 

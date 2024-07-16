@@ -27,11 +27,11 @@ export default function LocalSwitcher() {
   };
 
   return (
-    <label className='border-2 rounded'>
+    <label className='border-none text-black'>
       <p className='sr-only'>Change Language</p>
       <select
         defaultValue={localActive}
-        className='text-black font-medium bg-red-400'
+        className='font-medium rounded p-1'
         name=""
         id=""
         onChange={onSelectChange}

@@ -1,4 +1,7 @@
 {
-  "title": "Título de Contacto",
-  "description": "Esta es una descripción de Contacto"
+  "title": "Mis datos",
+  "description": "¿Quieres contactarme?",
+  "linkedIn": "https://www.linkedin.com/in/emanuelescudero",
+  "gitHub": "https://github.com/escuderoemanuel",
+  "website": "https://emanuelescudero.ar"
 }

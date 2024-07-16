@@ -4,6 +4,8 @@ import { unstable_setRequestLocale } from 'next-intl/server';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import './globals.css';
+import { inter } from '@/ui/font';
+
 
 const locales = ['en', 'es'];
 
@@ -23,7 +25,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body>
+      <body className={`${inter.className} antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <div className='flex flex-col h-screen max-w-4xl mx-auto'>
             <Header locale={locale} />
