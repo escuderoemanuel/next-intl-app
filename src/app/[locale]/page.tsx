@@ -1,8 +1,10 @@
 import {useTranslations} from 'next-intl';
- 
-export default function IndexPage() {
+import {unstable_setRequestLocale} from 'next-intl/server';
+
+
+export default function IndexPage({params: {locale}}: any) {
+  unstable_setRequestLocale(locale);
   const t = useTranslations('IndexPage');
- 
   return (
     <section className='w-auto h-screen flex flex-col'>
       <h1 className='text-xl font-bold mb-4 uppercase'>{t('title')}</h1>
