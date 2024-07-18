@@ -1,44 +1,37 @@
 'use client';
 
 import { useLocale } from 'next-intl';
-import { useRouter, usePathname, useSearchParams } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import { ChangeEvent, useTransition } from 'react';
 
 export default function LocalSwitcher() {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
-  const localActive = useLocale();
   const pathname = usePathname();
-  const searchParams = useSearchParams();
+  const localActive = useLocale();
 
   const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const nextLocale = e.target.value;
-
-    const newUrl = new URL(window.location.href);
-    newUrl.pathname = newUrl.pathname.replace(`/${localActive}`, `/${nextLocale}`);
-
-    if (searchParams) {
-      newUrl.search = searchParams.toString();
-    }
-
+    const segments = pathname.split('/');
+    segments[1] = nextLocale; // Replace the locale segment
+    const newPath = segments.join('/');
+    
     startTransition(() => {
-      router.replace(newUrl.toString());
+      router.replace(newPath);
     });
   };
 
   return (
-    <label className='border-none text-black'>
-      <p className='sr-only'>Change Language</p>
+    <label className='border-none rounded text-black bg-red-400'>
+      <p className='sr-only'>change language</p>
       <select
         defaultValue={localActive}
         className='font-medium rounded p-1'
-        name=""
-        id=""
         onChange={onSelectChange}
         disabled={isPending}
       >
-        <option value="en">English</option>
-        <option value="es">Spanish</option>
+        <option value='en'>English</option>
+        <option value='es'>Spanish</option>
       </select>
     </label>
   );

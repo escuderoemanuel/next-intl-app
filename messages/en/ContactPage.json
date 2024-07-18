@@ -1,7 +1,9 @@
 {
-  "title": "My data",
-  "description": "Do you want contact me?",
-  "linkedIn": "https://www.linkedin.com/in/emanuelescudero",
-  "gitHub": "https://github.com/escuderoemanuel",
-  "website": "https://emanuelescudero.ar"
+  "ContactPage": {
+    "title": "My data",
+    "description": "Do you want contact me?",
+    "linkedIn": "https://www.linkedin.com/in/emanuelescudero",
+    "gitHub": "https://github.com/escuderoemanuel",
+    "website": "https://emanuelescudero.ar"
+  }
 }

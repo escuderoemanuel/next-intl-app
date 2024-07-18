@@ -1,8 +1,10 @@
 {
-  "title": "Emanuel Escudero 🤓",
-  "description": "I'm a FullStack Developer & Advanced Technician in Tourism 🤷‍♂️",
-  "text1": "Today I decided to create this app, to practice the implementation of internationalization tools, for NextJs. You can see the source code in my GitHub repository  👉 ",
-  "text2": "You can see my website by following the link at the bottom of the page 👇",
-  "text3": "Thank you for your visit!",
-  "repoLink": "https://github.com/escuderoemanuel/next-intl-app"
+  "AboutPage": {
+    "title": "Emanuel Escudero 🤓",
+    "description": "I'm a FullStack Developer & Advanced Technician in Tourism 🤷‍♂️",
+    "text1": "Today I decided to create this app, to practice the implementation of internationalization tools, for NextJs. You can see the source code in my GitHub repository  👉 ",
+    "text2": "You can see my website by following the link at the bottom of the page 👇",
+    "text3": "Thank you for your visit!",
+    "repoLink": "https://github.com/escuderoemanuel/next-intl-app"
+  }
 }
