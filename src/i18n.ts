@@ -8,7 +8,15 @@ export default getRequestConfig(async ({ locale }) => {
   // Validate that the incoming `locale` parameter is valid
   if (!locales.includes(locale as any)) notFound();
 
+  const messages = {
+    ...((await import(`../messages/${locale}/IndexPage.json`)).default),
+    ...((await import(`../messages/${locale}/AboutPage.json`)).default),
+    ...((await import(`../messages/${locale}/ContactPage.json`)).default),
+    ...((await import(`../messages/${locale}/Footer.json`)).default),
+    ...((await import(`../messages/${locale}/Navigation.json`)).default)
+  };
+
   return {
-    messages: (await import(`../messages/${locale}.json`)).default
+    messages
   };
 });

@@ -6,14 +6,14 @@ export default function Footer() {
   const t = useTranslations('Footer');
 
   return (
-    <footer className='mb-4 text-neutral-300 text-center flex text-sm items-center gap-2 mx-auto'>
+    <footer className='mt-8 py-4 text-neutral-100 text-center flex text-xs items-center gap-2 mx-auto'>
       <p>{t('license')}</p>
         <Link href={`https://emanuelescudero.ar`}>
         <Image 
           src={t('logo')}
           alt={t('logoAlt')}
-          width={20}
-          height={20}
+          width={18}
+          height={18}
         >
         </Image>
         </Link>

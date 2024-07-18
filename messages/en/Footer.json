@@ -1,6 +1,8 @@
 {
-  "license": "Developed by Emanuel Escudero",
-  "logo": "/Logo2024.png",
-  "logoAlt": "Developer Logotype",
-  "url": "https://emanuelescudero.ar"
+  "Footer": {
+    "license": "Developed by Emanuel Escudero",
+    "logo": "/Logo2024.png",
+    "logoAlt": "Developer Logotype",
+    "url": "https://emanuelescudero.ar"
+  }
 }
